@@ -1,0 +1,26 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "codeFrame": false,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+  "plugins": [ "import", "prettier", "react" ],
+  "rules": {
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          ["builtin", "external"],
+          ["internal", "parent", "sibling", "index"]
+        ],
+        "newlines-between": "never"
+      }
+    ],
+    "prettier/prettier": "warn",
+    "react/jsx-sort-props": ["warn", {"reservedFirst": ["key"]}]
+  }
+}
