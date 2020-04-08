@@ -1,7 +1,7 @@
 import React from "react"
 import Primitives from "primitives"
 import {Route, Switch} from "react-router"
-import {Home, Something} from "pages"
+import {Home} from "pages"
 
 function App() {
   return (
@@ -13,7 +13,6 @@ function App() {
     >
       <Switch>
         <Route component={Home} exact path="/" />
-        <Route component={Something} path="/something" />
       </Switch>
     </Primitives.Flex>
   )
